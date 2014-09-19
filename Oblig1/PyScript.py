@@ -99,7 +99,7 @@ verbose : bool
 
     if dir_deep>=0 :
 
-        for x in range (1,dirs):  
+        for x in range (1,rand_dirs):  
 
             new_dir2 = new_dir+"/"+random_string()
             os.makedirs(new_dir2)
@@ -138,7 +138,7 @@ verbose : bool
     last_modified = randrange(start_time,end_time+1)
     last_accessed = randrange(last_modified,end_time+1)
 
-    for x in range (files):
+    for x in range (randrange(1,files)):
         filnavn = random_string()
         fill = target + "/"+filnavn
         if os.path.exists(fill):
@@ -147,7 +147,7 @@ verbose : bool
             fil = open(fill,"w+")
             if verbose ==True:
                 print fill
-            rand_size=random.randint(1,3000)
+            rand_size=random.randint(1,size)
             fil.write(os.urandom(rand_size))
 
             fil.close()
