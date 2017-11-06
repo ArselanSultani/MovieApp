@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">My First App</string>
-    <string name="action_settings">Settings</string>
-    <string name="player_tap">Tap for spilleren</string>
-    <string name="player_cho">Spillervelger!</string>
-    <string name="press_but">Trykk på knappen</string>
-</resources>
